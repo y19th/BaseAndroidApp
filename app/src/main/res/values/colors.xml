@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="primaryRed">#B5F47A7A</color>
+    <color name="secondaryRed">#B5F8BABA</color>
+    <color name="tertiaryRed">#F0FBD7D7</color>
+    <color name="textColor">#232222</color>
+
+    <color name="backgroundColor">#FFF2F2</color>
+
+
+    <color name="darkPrimaryRed">#B5FFB2B2</color>
+    <color name="darkSecondaryRed">#B5FBD7D7</color>
+    <color name="darkTertiaryRed">#F0FBD7D7</color>
+
+    <color name="darkTextColor">#FFFAFA</color>
+    <color name="darkBackgroundColor">#1C1C1C</color>
+
+
+</resources>
