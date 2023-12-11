@@ -1,6 +1,7 @@
 package com.example.baseandroidapp.presentation.fragment
 
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,6 +30,7 @@ class FragmentMain: BaseFragment<FragmentMainBinding>() {
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.state.collect {
@@ -39,6 +41,20 @@ class FragmentMain: BaseFragment<FragmentMainBinding>() {
     }
 
     private fun attachState(data : MainState) {
-        binding.text.text = data.count.toString()
+        binding.apply {
+            text.text = data.count.toString()
+            button.setOnClickListener {
+                showLoader()
+                object : CountDownTimer(5000,1000) {
+                    override fun onTick(millisUntilFinished: Long) {
+                    }
+
+                    override fun onFinish() {
+                        hideLoader()
+                    }
+
+                }.start()
+            }
+        }
     }
 }
