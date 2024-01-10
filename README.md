@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/y19th/baseandroidapp/badge)](https://www.codefactor.io/repository/github/y19th/baseandroidapp)
+
 # BaseAndroidApp
 
 Base Android app with MVVM Clean artitecture pattern.
